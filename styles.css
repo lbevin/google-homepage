@@ -1,0 +1,222 @@
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+
+nav {
+  max-width: 100%;
+  height: 10vh;
+}
+
+li {
+  list-style: none;
+  margin: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #222;
+  font-size: 13px;
+}
+
+nav, nav ul, nav ul.top-left, nav ul.top-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3px 9px;
+}
+
+#squares  {
+  height: 16px;
+  width: 16px;
+}
+
+#profile {
+  height: 33px;
+  width: 32px;
+  border-radius: 50%
+}
+
+.page-center {
+  height: 82vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  margin: 30px;
+}
+
+.search-bar {
+}
+
+input {
+width: 500px;
+height: 45px;
+padding-left: 50px;
+border-radius: 25px;
+border: 1px solid #dfe1e5;
+box-shadow: none;
+z-index: 3;
+user-select: none;
+}
+
+input:hover {
+  box-shadow: 0 1px 6px 0 	rgba(60, 60, 60, 0.3);
+  border-color: rgba(224,226,230,0);
+}
+
+.buttons button {
+  font-size: 14px;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  margin: 30px 5px;
+  color: #5F6368;
+  padding: 7px 15px;
+  border-radius: 5px;
+}
+
+.buttons button:hover {
+  border-color: #c6c6c6;
+  color: #222;
+  cursor: pointer;
+  ox-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.google-text {
+  color: #222;
+  font-size: 13px;
+}
+
+.bottom {
+  background-color: #f2f2f2;
+}
+
+.bottom, .bottom-left, .bottom-right{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+}
+
+.bottom li {
+  list-style: none;
+  padding: 8px;
+}
+
+.bottom ul {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.bottom-left, .bottom-right {
+  margin: 0 20px;
+}
+
+.bottom a {
+  text-decoration: none;
+  color: #5F6368;
+  ;
+  font-size: 13px;
+}
+
+input[type='text'] {
+  background-image: url(search.svg), url(http://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png);
+  background-position: left, right;
+  background-size: 24px;
+  background-position-x: 10px, 465px;
+  background-repeat: no-repeat, no-repeat;
+}
+
+input:focus {
+  outline: none;
+}
+
+.bottom a:hover {
+  text-decoration: underline;
+}
